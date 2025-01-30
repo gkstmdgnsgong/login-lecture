@@ -13,7 +13,7 @@ const output = {
 const users = {
     id: ["woorimIt" ,"나개발" ,"김팀장"],
     psword: ["1234", "1234", "123456"],
-}
+};
 
 const process = {
     login: (req, res) => {
@@ -25,9 +25,9 @@ const process = {
             if(users.psword[idx] === psword){
                 return res.json({
                     success: true,
-                    });
-                }
+                });
             }
+        }
 
         return res.json({
             success: false,
